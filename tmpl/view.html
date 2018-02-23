@@ -1,0 +1,11 @@
+{{template "header"}}
+<div>
+	<header>	
+		<h1>{{.Title}}</h1>
+	</header>
+	<section>
+		<p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+		<p>{{printf "%s" .Body}}</p>
+	</section>
+</div>
+{{template "footer"}}
